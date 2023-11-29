@@ -1,9 +1,16 @@
 .wrapper {
-  max-width: 900px;
+  max-width: 990px;
   width: 100%;
   margin: 0 auto;
 }
 
+.ca_btn {
+  padding: 7px 30px;
+  background-color: #5b1355;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  font-size: 18px;
+}
 .btn_peer {
   text-transform: none;
   color: white;
@@ -28,9 +35,27 @@
   border-radius: 8px;
   padding: 30px 25px;
 }
-
+.ft_card {
+  text-align: center;
+  background-image: linear-gradient(to bottom, #5b135586, #191919f6);
+  border-radius: 8px;
+  padding: 30px 25px;
+  box-shadow: 1px 0px 11px 1px #e07ce0;
+  margin: 0px 8px;
+}
 .img_box {
   display: flex;
   align-items: cener;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .ca_btn {
+    font-size: 12px;
+    word-break: break-all;
+    padding: 7px 10px;
+  }
+  .ft_card {
+    margin-bottom: 35px;
+  }
 }
