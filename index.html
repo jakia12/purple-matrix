@@ -25,7 +25,25 @@
       src="./_static/js/wombat9b8c.js?v=txqj7nKC"
       charset="utf-8"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
@@ -150,19 +168,23 @@
         <section
           class="relative mx-auto pt-4 lg:h-[650px] lg:pt-16 xl:h-screen"
           style="
-            background: transparent
-              linear-gradient(180deg, #022c05 0%, #000000 100%) 0% 0% no-repeat
-              padding-box;
+            background-image: linear-gradient(
+                to bottom,
+                rgba(128, 0, 128, 0.406),
+                #000000bb
+              ),
+              url(/img/bg4.jpg);
+            background-size: cover;
           "
         >
-          <img
+          <!-- <img
             src="./20230324063401im_/https_/torwallet.app/mobile-mask.png"
             class="absolute top-0 left-1/2 -translate-x-1/2 sm:hidden"
           />
           <img
             src="./20230324063401im_/https_/torwallet.app/hero.png"
             class="absolute top-0 left-1/2 hidden -translate-x-1/2 sm:block"
-          />
+          /> -->
           <div class="container mx-auto w-full max-w-[1280px] px-6">
             <div
               class="relative z-10 flex flex-col items-center justify-center gap-4"
@@ -272,8 +294,8 @@
           class="relative mx-auto overflow-x-hidden py-8 lg:py-16"
           style="
             background: transparent
-              linear-gradient(360deg, #022c05 0%, #000000 100%) 0% 0% no-repeat
-              padding-box;
+              linear-gradient(360deg, #5c1e5668 0%, #000000 100%) 0% 0%
+              no-repeat padding-box;
           "
         >
           <img
@@ -297,17 +319,33 @@
               <div>Works online or offline.</div>
             </div>
             <div
+              class="button_group"
+              style="text-align: center; margin: 50px 0"
+            >
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn_peer"
+                >Buy Now</a
+              >
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn_peer"
+                >Chart</a
+              >
+            </div>
+            <!-- <div
               class="features mt-2 text-center text-sm font-bold tracking-[0.3em]"
             >
               MINIMAL DESIGN MAXIMUM FUNCTIONALITY
-            </div>
-            <a
+            </div> -->
+            <!-- <a
               href="https://app.0xwallet.pro/"
               class="features relative mx-auto mt-5 block h-[50px] lg:h-[60px] lg:w-[600px]"
-              ><img
-                src="./20230313113924im_/https_/torwallet.app/web-wallet.png"
-                class="glitch githch-btn"
-            /></a>
+              ></a>
             <a
               href="https://docs.0xwallet.pro/"
               class="features relative mx-auto mt-5 block h-[50px] lg:h-[60px] lg:w-[600px]"
@@ -321,13 +359,60 @@
               ><img
                 src="./20230331063203im_/https_/torwallet.app/stake.png"
                 class="glitch githch-btn"
-            /></a>
-            <img
+            /></a> -->
+
+            <!-- <img
               src="./20230313114045im_/https_/torwallet.app/particle.png"
               class="features mx-auto -mt-2 w-full max-w-[600px]"
-            />
+            /> -->
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="ft_card">
+                    <div class="img_box">
+                      <img src="/img/shield.png" alt="" />
+                    </div>
+                    <div class="card_body">
+                      <h2>Highly Secure</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime mollitia, molestiae quas vel sint commodi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="ft_card">
+                    <div class="img_box">
+                      <img src="/img/shield.png" alt="" />
+                    </div>
+                    <div class="card_body">
+                      <h2>Highly Secure</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime mollitia, molestiae quas vel sint commodi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="ft_card">
+                    <div class="img_box">
+                      <img src="/img/shield.png" alt="" />
+                    </div>
+                    <div class="card_body">
+                      <h2>Highly Secure</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime mollitia, molestiae quas vel sint commodi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <div
+            <!-- <div
               class="mx-auto mt-16 grid max-w-[900px] grid-cols-2 gap-6 md:grid-cols-3 md:gap-16 lg:gap-24"
             >
               <div
@@ -354,44 +439,21 @@
                   class="glitch-img-3 glitch"
                 />
               </div>
-              <div
-                class="features-img relative h-[120px] w-[130px] justify-self-center sm:h-[180px] sm:w-[200px] lg:h-[217px] lg:w-[233px]"
-              >
-                <img
-                  src="./20230313130647im_/http_/torwallet.app/decentralized.png"
-                  class="glitch-img-4 glitch"
-                />
-              </div>
-              <div
-                class="features-img relative h-[120px] w-[130px] justify-self-center sm:h-[180px] sm:w-[200px] lg:h-[217px] lg:w-[233px]"
-              >
-                <img
-                  src="./20230313113330im_/http_/torwallet.app/kyx.png"
-                  class="glitch-img-5 glitch"
-                />
-              </div>
-
-              <div
-                class="features-img relative h-[120px] w-[130px] justify-self-center sm:h-[180px] sm:w-[200px] lg:h-[217px] lg:w-[233px]"
-              >
-                <img
-                  src="./20230313141356im_/http_/torwallet.app/support.png"
-                  class="glitch-img-6 glitch"
-                />
-              </div>
-            </div>
+             
+              
+            </div> -->
           </div>
         </section>
         <section
           class="relative mx-auto overflow-x-hidden lg:pt-32"
           style="
             background: transparent
-              linear-gradient(180deg, #022c05 0%, #000000 100%) 0% 0% no-repeat
-              padding-box;
+              linear-gradient(180deg, #191919cf 0%, #000000 100%) 0% 0%
+              no-repeat padding-box;
           "
         >
           <div class="relative">
-            <img
+            <!-- <img
               src="./20230313133455im_/https_/torwallet.app/side-particle.png"
               class="absolute top-[30%] -right-6 max-w-[200px] -translate-y-1/2 lg:max-w-[400px]"
             />
@@ -402,7 +464,7 @@
             <img
               src="./20230313133455im_/https_/torwallet.app/side-particle.png"
               class="absolute top-[70%] -right-6 max-w-[200px] -translate-y-1/2 lg:hidden lg:max-w-[400px]"
-            />
+            /> -->
             <div
               class="container relative mx-auto flex w-full max-w-[1280px] flex-wrap items-center justify-between gap-6 py-8 px-6 lg:flex-nowrap lg:py-16"
             >
@@ -410,6 +472,7 @@
                 <h2
                   data-text="Artificial Intelligence"
                   class="glitch-text uppercase features-extra-0"
+                  style="color: #76146c"
                 >
                   Artificial Intelligence
                 </h2>
@@ -421,7 +484,7 @@
                   intelligence.
                 </div>
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/glitch-line.png"
+                  src="/img/gl.png"
                   class="-ml-8 mt-4 max-w-[300px] features-extra-0"
                 />
               </div>
@@ -429,7 +492,7 @@
                 class="relative h-[200px] w-full max-w-[300px] features-extra-0 shadow-2xl odd:order-2 even:order-1 md:mx-auto lg:mx-0 lg:h-[400px] lg:max-w-[600px]"
               >
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/ai.png"
+                  src="/img/ft (2).png"
                   class="glitch glitch-fimg object-cover"
                 />
               </div>
@@ -441,7 +504,7 @@
                 class="relative h-[200px] features-extra-1 w-full max-w-[300px] shadow-2xl md:mx-auto lg:mx-0 lg:h-[400px] lg:max-w-[600px]"
               >
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/revenue.png"
+                  src="/img/ft5.png"
                   class="glitch glitch-fimg object-cover"
                 />
               </div>
@@ -449,6 +512,7 @@
                 <h2
                   data-text="DAILY REVENUE"
                   class="glitch-text features-extra-1 sm:whitespace-nowrap"
+                  style="color: #76146c"
                 >
                   DAILY REVENUE
                 </h2>
@@ -459,7 +523,7 @@
                   adverts daily.
                 </div>
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/glitch-line.png"
+                  src="/img/gl.png"
                   class="-ml-8 mt-4 max-w-[300px] features-extra-1"
                 />
               </div>
@@ -471,6 +535,7 @@
                 <h2
                   data-text="TRUE DECENTRALIZATION"
                   class="glitch-text uppercase features-extra-2"
+                  style="color: #76146c"
                 >
                   TRUE DECENTRALIZATION
                 </h2>
@@ -482,7 +547,7 @@
                   competitors.
                 </div>
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/glitch-line.png"
+                  src="/img/gl.png"
                   class="-ml-8 mt-4 max-w-[300px] features-extra-2"
                 />
               </div>
@@ -490,7 +555,7 @@
                 class="relative h-[200px] w-full max-w-[300px] features-extra-2 shadow-2xl odd:order-2 even:order-1 md:mx-auto lg:mx-0 lg:h-[400px] lg:max-w-[600px]"
               >
                 <img
-                  src="./20230324052654im_/https_/torwallet.app/true.png"
+                  src="img/ft (2).png"
                   class="glitch glitch-fimg object-cover"
                 />
               </div>
@@ -502,7 +567,7 @@
                 class="relative h-[200px] features-extra-3 w-full max-w-[300px] shadow-2xl md:mx-auto lg:mx-0 lg:h-[400px] lg:max-w-[600px]"
               >
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/stay-anon.png"
+                  src="/img/ft5.png"
                   class="glitch glitch-fimg object-cover"
                 />
               </div>
@@ -510,6 +575,7 @@
                 <h2
                   data-text="STAY ANON"
                   class="glitch-text features-extra-3 sm:whitespace-nowrap"
+                  style="color: #76146c"
                 >
                   STAY ANON
                 </h2>
@@ -520,12 +586,12 @@
                   been so easy until now
                 </div>
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/glitch-line.png"
+                  src="/img/gl.png"
                   class="-ml-8 mt-4 max-w-[300px] features-extra-3"
                 />
               </div>
             </div>
-            <div
+            <!-- <div
               class="container relative mx-auto flex w-full max-w-[1280px] flex-wrap items-center justify-between gap-6 py-8 px-6 lg:flex-nowrap lg:py-16"
             >
               <div class="">
@@ -541,7 +607,7 @@
                   Instant tap to pay at any store through 0xWallet today.
                 </div>
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/glitch-line.png"
+                  src="/img/gl.png"
                   class="-ml-8 mt-4 max-w-[300px] features-extra-4"
                 />
               </div>
@@ -579,38 +645,38 @@
                   concern for breaches with in-house cybersecurity expertise.
                 </div>
                 <img
-                  src="./20230324052653im_/https_/torwallet.app/glitch-line.png"
+                  src="/img/gl.png"
                   class="-ml-8 mt-4 max-w-[300px] features-extra-5"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section
           class="relative mx-auto py-16"
           style="
             background: transparent
-              linear-gradient(360deg, #022c05 0%, #000000 100%) 0% 0% no-repeat
-              padding-box;
+              linear-gradient(360deg, #5c1e5684 0%, #000000 100%) 0% 0%
+              no-repeat padding-box;
           "
         >
           <div class="container mx-auto w-full max-w-[1280px] px-6">
-            <img
+            <!-- <img
               src="./20230313113956im_/https_/torwallet.app/slide.png"
               class="mx-auto max-w-[90%]"
-            />
+            /> -->
             <div class="relative mt-4">
-              <img
+              <!-- <img
                 src="./20230313124735im_/http_/torwallet.app/lines.png"
                 class=""
-              />
+              /> -->
               <div
                 class="absolute top-1/2 left-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 text-center text-xs font-bold uppercase leading-normal tracking-widest lg:text-2xl lg:tracking-[0.5rem]"
               >
-                <div class="slide-b-text">
+                <!-- <div class="slide-b-text">
                   Privacy is a right, not a luxury <br />0x helps you maintain a
                   private &amp; secure life
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="mt-16">
@@ -619,52 +685,50 @@
               >
                 <a
                   href="https://web.archive.org/web/20230331195240/https://etherscan.io/address/TBA"
-                  ><img
-                    class="mx-auto"
-                    src="./20230313113912im_/https_/torwallet.app/partners/etherscan.png"
+                  ><img class="mx-auto" src="/img/etherscan.png"
                 /></a>
 
                 <a href="#"
-                  ><img class="mx-auto" src="./_static/images/image-116.png"
+                  ><img class="mx-auto" src="./img/image-116.png"
                 /></a>
                 <a href="#"
-                  ><img class="mx-auto" src="./_static/images/id_3gM5vGA.png"
+                  ><img class="mx-auto" src="/img/id_3gM5vGA.png"
                 /></a>
 
                 <img
                   class="mx-auto"
-                  src="./_static/images/2560px-Uniswap_Logo_and_Wordmark.svg.png"
+                  src="img/2560px-Uniswap_Logo_and_Wordmark.svg.png"
                 />
                 <a
                   href="../github.com/solidproof/projects/blob/main/TOR%20Wallet/KYC_Certificate_TOR_Wallet.html"
                   target="_blank"
                   ><img
                     class="mx-auto"
-                    src="./_static/images/logo-ethereum-cryptocurrency-blockchain-exchange-rate-png-favpng-THeRqGBTaCyULM30fJZ9XWWAf.png"
+                    src="/img/logo-ethereum-cryptocurrency-blockchain-exchange-rate-png-favpng-THeRqGBTaCyULM30fJZ9XWWAf.png"
                 /></a>
               </div>
             </div>
 
-            <img
+            <!-- <img
               src="./20230324052653im_/https_/torwallet.app/small-bar.png"
               class="absolute top-[30%] right-0 w-full max-w-[10px] -translate-y-1/2 lg:max-w-[30px]"
             />
             <img
               src="./20230324052653im_/https_/torwallet.app/small-bar.png"
               class="absolute top-[30%] left-0 w-full max-w-[10px] -translate-y-1/2 lg:max-w-[30px]"
-            />
+            /> -->
           </div>
         </section>
 
         <section
           class="relative mx-auto overflow-hidden lg:pt-16"
           style="
-            background: transparent
-              linear-gradient(180deg, #022c05 0%, #000000 100%) 0% 0% no-repeat
-              padding-box;
+            background-image: linear-gradient(#0000007b, #0000009e),
+              url(img/bg3.jpg);
+            padding-bottom: 80px;
           "
         >
-          <div
+          <!-- <div
             class="container relative z-10 mx-auto w-full max-w-[1280px] px-6"
           >
             <div class="grid items-center gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -696,6 +760,43 @@
                 </div>
               </div>
             </div>
+          </div> -->
+
+          <div class="container">
+            <div class="text-center">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="img/ft (2).png"
+                  style="max-width: 400px; width: 100%"
+                  alt=""
+                />
+              </div>
+              <h2
+                style="
+                  font-size: 30px;
+                  letter-spacing: 3px;
+                  margin: 30px 0 0 0;
+                  color: #771e6e;
+                "
+              >
+                Join Our community
+              </h2>
+              <span
+                style="
+                  color: #fff;
+                  font-size: 20px;
+                  margin: 30px 0;
+                  display: block;
+                "
+                >Official Email:demo@gmail.com</span
+              >
+            </div>
           </div>
           <div
             class="relative z-10 mx-auto mt-6 flex max-w-[1280px] flex-wrap justify-between"
@@ -708,13 +809,22 @@
               <div
                 class="md:base absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4 text-xs font-bold uppercase tracking-widest text-accent sm:gap-12 sm:text-sm lg:tracking-[0.3em]"
               >
-                <a href="https://t.me/ZeroXWalletPortal" target="_blank"
+                <a
+                  href="https://t.me/ZeroXWalletPortal"
+                  target="_blank"
+                  style="color: #771e6e"
                   >Telegram</a
                 >
-                <a href="https://twitter.com/0xWallet_ERC" target="_blank"
+                <a
+                  href="https://twitter.com/0xWallet_ERC"
+                  target="_blank"
+                  style="color: #771e6e"
                   >Twitter</a
                 >
-                <a href="https://docs.0xwallet.pro/" target="_blank"
+                <a
+                  href="https://docs.0xwallet.pro/"
+                  target="_blank"
+                  style="color: #771e6e"
                   >Whitepaper</a
                 >
               </div>
@@ -726,6 +836,7 @@
               />
               <div
                 class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-6 whitespace-nowrap text-sm font-bold tracking-widest text-accent md:text-base lg:tracking-[0.3em]"
+                style="color: #771e6e"
               >
                 ALL RIGHTS RESERVED
               </div>
@@ -734,15 +845,12 @@
           <div class="mt-4 text-center font-bold tracking-[0.3rem]">
             EMPOWERING YOU
           </div>
-          <img
+          <!-- <img
             src="./20230313114045im_/https_/torwallet.app/particle.png"
             class="absolute -bottom-4 left-1/2 mx-auto -mt-2 w-full max-w-[1200px] -translate-x-1/2 -scale-y-100"
-          />
+          /> -->
         </section>
-        <img
-          src="./20230313113958im_/https_/torwallet.app/bar.png"
-          class="max-h-[300px] w-full pt-4"
-        />
+        <!-- <img src="/img/bar.png" class="w-full pt-4" /> -->
       </main>
 
       <script type="module" data-sveltekit-hydrate="slsdzg">

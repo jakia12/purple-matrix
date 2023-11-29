@@ -1,0 +1,36 @@
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn_peer {
+  text-transform: none;
+  color: white;
+  background-color: #5b1355;
+  font-size: 18px;
+  padding: 9px 40px;
+  border-radius: 30px;
+  transition: all 0.3s;
+  margin-right: 10px;
+  border: 2px solid #5b1355;
+}
+
+.btn_peer:hover {
+  background-color: transparent;
+  color: #5b1355;
+}
+
+/******card section********/
+.ft_card {
+  text-align: center;
+  background-image: linear-gradient(to bottom, #5b135586, #191919f6);
+  border-radius: 8px;
+  padding: 30px 25px;
+}
+
+.img_box {
+  display: flex;
+  align-items: cener;
+  justify-content: center;
+}
